@@ -1,0 +1,63 @@
+﻿<Window x:Class="TopSystemWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopSystemWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="580" Width="700" HorizontalAlignment="Center">
+
+    <Grid MouseDown="Grid_MouseDown" Margin="0,0,0,-16">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\anton\source\repos\TopSystemWpf\Resources\5750855fca0bd1551288fe54.jpg" AlignmentX="Center"></ImageBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+
+        <Button HorizontalAlignment="Left" Height="26" Margin="20,85,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click" Grid.Row="1" Background="White">
+            <Image Source="C:\Users\anton\source\repos\TopSystemWpf\Resources\ellipse.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="26" Margin="120,85,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click_1" Grid.Row="1" Background="White">
+            <Image Source="C:\Users\anton\source\repos\TopSystemWpf\Resources\circlepng.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="26" Margin="220,85,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click_2" Grid.Row="1" Background="White">
+            <Image Source="C:\Users\anton\source\repos\TopSystemWpf\Resources\triangle.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="26" Margin="320,85,0,0" VerticalAlignment="Top" Width="48" Click="Button_Click_3" Grid.Row="1" Background="White">
+            <Image Source="C:\Users\anton\source\repos\TopSystemWpf\Resources\poligon.png"/>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Height="26" Margin="420,85,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click_4" Grid.Row="1" Background="White">
+            <Image Source="C:\Users\anton\source\repos\TopSystemWpf\Resources\rectangle.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="26" Margin="520,85,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click_5" Grid.Row="1" Background="White">
+            <Image Source="C:\Users\anton\source\repos\TopSystemWpf\Resources\sqrt.png"/>
+        </Button>
+        <Canvas x:Name="test" HorizontalAlignment="Center" Height="300" Margin="0,23,0,0" VerticalAlignment="Top" Width="420" Grid.RowSpan="2" Background="White"/>
+        <TextBox x:Name="t1" HorizontalAlignment="Left" Height="16" Margin="20,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t2" HorizontalAlignment="Left" Height="16" Margin="20,137,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t3" HorizontalAlignment="Left" Height="16" Margin="120,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t41" HorizontalAlignment="Left" Height="16" Margin="220,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t13" HorizontalAlignment="Left" Height="16" Margin="520,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t11" HorizontalAlignment="Left" Height="16" Margin="420,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t12" HorizontalAlignment="Left" Height="16" Margin="420,137,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t42" HorizontalAlignment="Left" Height="16" Margin="244,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t51" HorizontalAlignment="Left" Height="16" Margin="220,137,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t52" HorizontalAlignment="Left" Height="16" Margin="244,137,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t61" HorizontalAlignment="Left" Height="16" Margin="220,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t62" HorizontalAlignment="Left" Height="16" Margin="244,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t71" HorizontalAlignment="Left" Height="16" Margin="320,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t72" HorizontalAlignment="Left" Height="16" Margin="344,116,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t81" HorizontalAlignment="Left" Height="16" Margin="320,137,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t82" HorizontalAlignment="Left" Height="16" Margin="344,137,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t91" HorizontalAlignment="Left" Height="16" Margin="320,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t92" HorizontalAlignment="Left" Height="16" Margin="344,158,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t101" HorizontalAlignment="Left" Height="16" Margin="320,179,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="t102" HorizontalAlignment="Left" Height="16" Margin="344,179,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <Button Content="Инструкция" HorizontalAlignment="Left" Height="39" Margin="589,118,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click_6"/>
+    </Grid>
+</Window>
